@@ -1,0 +1,15 @@
+const alunos = [
+    { nome: "Carlos", nota: 7 },
+    { nome: "Ana", nota: 9 },
+    { nome: "Beatriz", nota: 5 }
+];
+
+const alunos_map = alunos.map(a => a.nome.toUpperCase())
+console.log(alunos_map)
+
+const alunos_filter = alunos.filter( a  => a.nota > 6)
+console.log(alunos_filter)
+
+const alunos_reduce = alunos.reduce( (acumulador, a)  => acumulador + a.nota, 0)
+
+console.log("media dos alunos ",alunos_reduce/alunos.length)
